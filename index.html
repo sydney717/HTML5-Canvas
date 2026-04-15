@@ -46,6 +46,15 @@ function drawRect() { //This draws a rectangle on the canvas
 	a_context.fillRect(5, 5, 175, 100);//sets coordinates and placement of rectangle
 
 };
+function my_name() {//this function displays my name, "Sydney"
+	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	a_context.font = "30px Times New Roman"; // adds font for my name and size
+	a_context.fillStyle = "#000000"; // sets color of text to black
+	a_context.fillText ("Sydney", 10, 150); //adds name text and coordinates for my name
+}; 
+
+
 </script>
 
 
