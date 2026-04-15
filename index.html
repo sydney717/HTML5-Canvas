@@ -37,8 +37,15 @@ https://www.w3schools.com/w3css/default.asp
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-//alert("This file last modified " + docMod); // generates alert box with last modified time stamp. un-comment out this entire line if you want to use.
+alert("This file last modified " + docMod); // generates alert box with last modified time stamp. un-comment out this entire line if you want to use.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+function drawRect() { //This draws a rectangle on the canvas
+	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	a_context.fillStyle = "#808080"; // rectangle is grey
+	a_context.fillRect(5, 5, 175, 100);//sets coordinates and placement of rectangle
+
+};
 </script>
 
 
