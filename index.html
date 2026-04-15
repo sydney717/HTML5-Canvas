@@ -53,6 +53,14 @@ function my_name() {//this function displays my name, "Sydney"
 	a_context.fillStyle = "#000000"; // sets color of text to black
 	a_context.fillText ("Sydney", 10, 150); //adds name text and coordinates for my name
 }; 
+function my_image() {//this function displays my chosen image
+	var a_canvas =document.getElementById('a'); //this variable calls the canvas using an id
+	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+	var longhornimg = document.getElementById('belugapic');//pulls beluga image
+	a_context.drawImage(belugapic, 5, 5, 100, 100);//draws image with size created by 4 numbers
+
+};
+
 
 
 </script>
